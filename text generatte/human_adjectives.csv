@@ -1,230 +1,752 @@
-lemma,part_of_speech,antonyms
-aboriginal,adjective,nonnative
-adjusted,adjective,unadjusted|maladjusted
-adscript,adjective,superscript
-affected,adjective,unaffected|unaffected|unmoved
-agitated,adjective,unagitated|unagitated
-appropriate,adjective,inappropriate
-armed,adjective,unarmed|armless|unarmed
-armored,adjective,unarmored|unarmored
-armoured,adjective,unarmored|unarmored
-artless,adjective,disingenuous|artful
-automatic,adjective,manual
-awful,adjective,nice
-backward,adjective,forward|forward
-beautiful,adjective,ugly
-bloodless,adjective,bloody
-broadnosed,adjective,catarrhine
-cerebral,adjective,emotional
-charged,adjective,uncharged
-civilian,adjective,military
-clean,adjective,dirty|unclean|dirty|dirty
-clement,adjective,inclement|inclement
-close,adjective,distant|distant|far
-cold,adjective,hot|hot
-cold-blooded,adjective,warm-blooded
-colored,adjective,uncolored
-coloured,adjective,uncolored
-common,adjective,individual|uncommon
-confirmed,adjective,unconfirmed
-confused,adjective,clearheaded
-cool,adjective,warm|warm|warm
-cosmopolitan,adjective,endemic|provincial
-cultivated,adjective,uncultivated
-dead,adjective,alive|live
-decent,adjective,indecent
-democratic,adjective,undemocratic
-demonstrative,adjective,undemonstrative
-dependable,adjective,unreliable;undependable
-dependent,adjective,independent|independent
-desensitising,adjective,sensitizing
-desensitizing,adjective,sensitizing
-detached,adjective,attached
-diplomatic,adjective,undiplomatic
-diplomatical,adjective,undiplomatic
-direct,adjective,indirect|indirect|collateral|retrograde|inverse|alternating
-dirty,adjective,clean|clean|clean
-disreputable,adjective,reputable
-dry,adjective,wet|wet|wet|wet|sweet|phlegmy
-dynamic,adjective,undynamic|stative
-dynamical,adjective,undynamic
-dystopian,adjective,utopian
-easy,adjective,difficult|uneasy
-elegant,adjective,inelegant
-emotional,adjective,cerebral|unemotional
-empty,adjective,full
-ethical,adjective,unethical
-excited,adjective,unexcited
-exempt,adjective,nonexempt|taxable
-expansive,adjective,unexpansive
-exploited,adjective,unexploited
-false,adjective,true
-feverish,adjective,afebrile
-figurative,adjective,literal
-finite,adjective,infinite|infinite
-formal,adjective,informal|informal
-former,adjective,latter
-forward,adjective,backward|backward|reverse
-frivolous,adjective,serious
-hardened,adjective,untempered|soft
-heavy,adjective,light|light|light|light|light|light
-hopeless,adjective,hopeful
-human,adjective,nonhuman
-humane,adjective,inhumane
-immature,adjective,mature|old|ripe|mature|fledged
-impersonal,adjective,personal
-impossible,adjective,possible
-impure,adjective,pure|pure|clean
-inclement,adjective,clement|clement
-indirect,adjective,direct|lineal|direct
-individual,adjective,common
-infinite,adjective,finite|finite
-insensate,adjective,sentient
-insensitive,adjective,sensitive|sensitive
-intellectual,adjective,nonintellectual|emotional
-intemperate,adjective,temperate|temperate
-involved,adjective,uninvolved
-irregular,adjective,regular|regular|regular
-junior,adjective,senior
-kind,adjective,unkind
-late,adjective,early|early|early
-later,adjective,early|early|early|early
-latest,adjective,early|early|early
-latter,adjective,former
-light,adjective,heavy|dark|heavy|heavy|heavy|dark|heavy|heavy
-loose,adjective,compact|tight|affixed
-lost,adjective,found|saved|won
-lyric,adjective,dramatic
-maladjusted,adjective,adjusted
-manlike,adjective,unmanly
-manual,adjective,automatic
-molar,adjective,molecular
-moral,adjective,immoral
-moved,adjective,unmoved
-moving,adjective,nonmoving|unmoving|still
-muscular,adjective,ectomorphic
-mutual,adjective,nonreciprocal
-nasty,adjective,nice
-national,adjective,international|local
-native,adjective,foreign|adopted|nonnative
-neurotic,adjective,unneurotic
-neutral,adjective,positive|chromatic
-nominal,adjective,real
-non-finite,adjective,finite
-noncommissioned,adjective,commissioned
-nonconformist,adjective,conformist
-nonexempt,adjective,nontaxable|exempt
-nonhuman,adjective,human
-nonjudgmental,adjective,judgmental
-nonmechanical,adjective,mechanical
-nonnative,adjective,native
-nonsubjective,adjective,subjective
-objective,adjective,subjective
-old,adjective,young|new
-older,adjective,young|new
-one-sided,adjective,reversible|multilateral
-optional,adjective,obligatory
-passionate,adjective,passionless
-past,adjective,present
-personal,adjective,impersonal
-plantigrade,adjective,digitigrade
-platyrhine,adjective,catarrhine
-platyrhinian,adjective,catarrhine
-platyrrhine,adjective,catarrhine
-platyrrhinian,adjective,catarrhine
-platyrrhinic,adjective,catarrhine
-pleasant,adjective,unpleasant
-polite,adjective,impolite|uncivil
-popular,adjective,unpopular
-powerful,adjective,powerless
-preceding,adjective,succeeding
-prejudiced,adjective,unprejudiced
-private,adjective,public
-proactive,adjective,retroactive
-profound,adjective,superficial
-proper,adjective,improper
-provincial,adjective,cosmopolitan
-psychoneurotic,adjective,unneurotic
-public,adjective,private
-punished,adjective,unpunished
-pure,adjective,impure|unsaturated|impure
-racial,adjective,nonracial
-rational,adjective,irrational|irrational
-reciprocal,adjective,nonreciprocal
-refined,adjective,unrefined|unrefined
-regular,adjective,irregular|irregular|irregular|constipated
-reserved,adjective,unreserved|unreserved
-responsive,adjective,unresponsive
-retarded,adjective,precocious
-rewarding,adjective,unrewarding
-rh-negative,adjective,rh-positive
-rh-positive,adjective,rh-negative
-right,adjective,left|incorrect;wrong|wrong|wrong|left
-rough,adjective,smooth|smooth|smooth|cut
-rude,adjective,civil
-sacred,adjective,profane
-seated,adjective,standing
-sensational,adjective,unsensational
-sensitising,adjective,desensitizing
-sensitizing,adjective,desensitizing
-servile,adjective,unservile
-shy,adjective,confident
-single,adjective,common|double|multiple|married
-singular,adjective,plural|plural
-sitting,adjective,standing
-social,adjective,unsocial
-standing,adjective,running|running|seated
-steady,adjective,unsteady
-stirred,adjective,unmoved
-stormy,adjective,calm
-subhuman,adjective,superhuman
-superficial,adjective,profound
-superhuman,adjective,subhuman
-sure,adjective,uncertain;unsure|uncertain
-susceptible,adjective,unsusceptible
-tactful,adjective,tactless
-temperate,adjective,intemperate|intemperate
-tight,adjective,loose|leaky
-touched,adjective,untouched|unmoved
-two-handed,adjective,right-handed
-typical,adjective,atypical
-unacceptable,adjective,acceptable
-unaffected,adjective,affected|moved|affected
-unagitated,adjective,agitated|agitated
-unarmed,adjective,armed|armed
-unarmored,adjective,armored|armored
-unarmoured,adjective,armored|armored
-unashamed,adjective,ashamed
-unassisted,adjective,assisted
-unconformist,adjective,conformist
-uncultivated,adjective,cultivated
-undemonstrative,adjective,demonstrative
-unemotional,adjective,emotional
-unethical,adjective,ethical
-uninvolved,adjective,involved
-united,adjective,divided
-unkind,adjective,kind
-unmoved,adjective,moved
-unmoving,adjective,moving|moving
-unobjectionable,adjective,dirty
-unorthodox,adjective,orthodox
-unrefined,adjective,refined|refined
-unrestrained,adjective,restrained
-unrewarding,adjective,rewarding
-unsensational,adjective,sensational
-untouched,adjective,touched|moved
-used,adjective,misused
-violent,adjective,nonviolent
-white,adjective,black|black
-wild,adjective,tame|tame
-young,adjective,old
-younger,adjective,old
-closer,adjective,distant|distant|far
-closest,adjective,distant|distant|far
-cleaner,adjective,dirty|unclean|dirty|dirty
-commoner,adjective,individual|uncommon
-cooler,adjective,warm|warm|warm
-drier,adjective,wet|wet|wet|wet|sweet|phlegmy
-dryer,adjective,wet|wet|wet|wet|sweet|phlegmy
-lighter,adjective,heavy|dark|heavy|heavy|heavy|dark|heavy|heavy
-wilder,adjective,tame|tame
+lemma,part_of_speech,antonyms,type
+abactinal,adjective,actinal,animal
+abducent,adjective,adducent,hobby
+abducting,adjective,adducent,hobby
+abient,adjective,adient,hobby
+able,adjective,unable,country
+aboriginal,adjective,nonnative,human country
+absorbent,adjective,nonabsorbent,country
+absorptive,adjective,nonabsorbent,country
+acceptable,adjective,unacceptable,industry
+active,adjective,inactive|passive|inactive|inactive|inactive|quiet|passive|stative|extinct|dormant|inactive,country hobby
+adaptative,adjective,maladaptive,country
+adaptive,adjective,maladaptive,country
+addressed,adjective,unaddressed,country
+adducent,adjective,abducent,hobby
+adducting,adjective,abducent,hobby
+adductive,adjective,abducent,hobby
+adjusted,adjective,unadjusted|maladjusted,human
+adscript,adjective,superscript,human
+adsorbent,adjective,nonadsorbent,country
+adsorptive,adjective,nonadsorbent,country
+affected,adjective,unaffected|unaffected|unmoved,human
+afloat,adjective,aground,landscape
+afraid,adjective,unafraid,country
+aggressive,adjective,unaggressive,country
+agitated,adjective,unagitated|unagitated,human
+altruistic,adjective,egoistic,animal
+amphibious,adjective,aquatic,animal
+ample,adjective,meager,country
+anaclinal,adjective,cataclinal,landscape
+anal,adjective,oral,country
+anestrous,adjective,estrous,animal country
+animate,adjective,inanimate|inanimate|insentient,animal
+antagonistic,adjective,conciliatory|synergistic,institution
+approachable,adjective,unapproachable,establishment
+appropriate,adjective,inappropriate,human
+armed,adjective,unarmed|armless|unarmed,human animal country
+armored,adjective,unarmored|unarmored,human animal landscape
+armoured,adjective,unarmored|unarmored,human animal landscape
+artless,adjective,disingenuous|artful,human
+asleep,adjective,awake,country
+associative,adjective,nonassociative,country
+associatory,adjective,nonassociative,country
+asymmetric,adjective,symmetrical,industry
+asymmetrical,adjective,symmetrical,industry
+atonal,adjective,tonal,hobby
+attached,adjective,detached|unattached,institution
+automatic,adjective,manual,human
+awake,adjective,asleep,country
+awful,adjective,nice,human
+back,adjective,front,animal
+backward,adjective,forward|forward,human
+balanced,adjective,unbalanced,country
+bare,adjective,sheathed|covered,landscape
+barreled,adjective,unbarreled,establishment
+barrelled,adjective,unbarreled,establishment
+beautiful,adjective,ugly,human
+bellied,adjective,bellyless,country
+big,adjective,small|little,animal
+bigger,adjective,small|little,animal
+bipolar,adjective,unipolar,country
+bloodless,adjective,bloody,human
+bloody,adjective,bloodless,landscape
+bodied,adjective,unbodied,country
+bound,adjective,unbound|free|unbound,landscape institution
+brainwashed,adjective,unbrainwashed,country
+breathing,adjective,breathless,country
+bridgeable,adjective,unbridgeable,landscape
+broad,adjective,narrow,country
+broadnosed,adjective,catarrhine,human
+broken,adjective,unbroken|unbroken|unbroken,country
+bumpy,adjective,smooth,landscape
+capable,adjective,incapable|incapable,country
+carnivorous,adjective,herbivorous,animal
+carpeted,adjective,uncarpeted,country landscape
+castrated,adjective,uncastrated,country
+cataclinal,adjective,anaclinal,landscape hobby
+cellular,adjective,noncellular,establishment institution
+central,adjective,peripheral,institution
+centralised,adjective,decentralized,institution
+centralized,adjective,decentralized,institution
+centrifugal,adjective,centripetal,institution
+centripetal,adjective,centrifugal,institution
+cerebral,adjective,emotional,human
+charged,adjective,uncharged,human
+cismontane,adjective,tramontane,landscape
+civil,adjective,uncivil|sidereal,country industry
+civilian,adjective,military,human
+civilised,adjective,noncivilized,country
+civilized,adjective,noncivilized,country
+clad,adjective,unclothed,country landscape
+clean,adjective,dirty|unclean|dirty|dirty,human country
+clear,adjective,unclear|opaque|ill-defined|cloudy,country
+clement,adjective,inclement|inclement,human
+close,adjective,distant|distant|far,human industry
+clothed,adjective,unclothed,country landscape
+cloudy,adjective,clear,landscape
+coated,adjective,uncoated,country landscape
+cold,adjective,hot|hot,human
+cold-blooded,adjective,warm-blooded,human animal
+collateral,adjective,lineal,establishment hobby
+collective,adjective,distributive,industry
+colored,adjective,uncolored,human country
+colorful,adjective,colorless|colorless|colourless|uncolored,country
+coloured,adjective,uncolored,human country
+combinative,adjective,noncombinative,country
+combinatory,adjective,noncombinative,country
+common,adjective,individual|uncommon,human
+compatible,adjective,incompatible|incompatible,country
+concealing,adjective,revealing,landscape
+concentric,adjective,eccentric,institution
+concentrical,adjective,eccentric,institution
+conclusive,adjective,inconclusive,country
+conductive,adjective,nonconductive,country
+confirmed,adjective,unconfirmed,human
+confused,adjective,clearheaded,human country
+conjunct,adjective,disjunct,institution
+connected,adjective,unconnected,establishment institution
+conscientious,adjective,unconscientious,hobby
+constitutional,adjective,unconstitutional,industry
+contaminated,adjective,uncontaminated,institution
+contaminating,adjective,clean,country
+continent,adjective,incontinent,country
+continental,adjective,intercontinental,country
+cool,adjective,warm|warm|warm,human
+coordinating,adjective,subordinating,industry
+coordinative,adjective,subordinating,industry
+cosmopolitan,adjective,endemic|provincial,human
+creative,adjective,uncreative,industry
+critical,adjective,uncritical|noncritical|uncritical|noncritical,country
+crowned,adjective,uncrowned|unlaureled|uncrowned,country
+crude,adjective,refined,country
+cultivated,adjective,uncultivated,human country
+cursorial,adjective,fossorial,hobby
+cut,adjective,uncut|uncut|untrimmed|unmown|uncut,animal
+dead,adjective,alive|live,human country
+decent,adjective,indecent,human
+decentralised,adjective,centralized,institution
+decentralized,adjective,centralized,institution
+decisive,adjective,indecisive|indecisive,industry
+declarative,adjective,interrogative|interrogatory,country
+declared,adjective,undeclared,country
+deep,adjective,shallow|shallow,country institution
+democratic,adjective,undemocratic,human
+demonstrative,adjective,undemonstrative,human
+denotative,adjective,connotative,hobby
+dependable,adjective,unreliable|undependable,human institution
+dependent,adjective,independent|independent,human
+desensitising,adjective,sensitizing,human
+desensitizing,adjective,sensitizing,human
+detached,adjective,attached,human
+determined,adjective,undetermined,country
+developed,adjective,undeveloped,country
+diadromous,adjective,anadromous,animal
+digitigrade,adjective,plantigrade,animal
+dignified,adjective,undignified,country
+dioecian,adjective,monoecious,animal
+dioecious,adjective,monoecious,animal
+diplomatic,adjective,undiplomatic,human
+diplomatical,adjective,undiplomatic,human
+direct,adjective,indirect|indirect|collateral|retrograde|inverse|alternating,human
+dirty,adjective,clean|clean|clean,human country
+disloyal,adjective,patriotic|loyal,country landscape
+disordered,adjective,ordered,country
+disreputable,adjective,reputable,human
+distrustful,adjective,trustful,institution
+domestic,adjective,foreign|undomestic,country
+dorsal,adjective,ventral|adaxial,animal
+downtown,adjective,uptown,establishment country institution
+drained,adjective,undrained,hobby
+dry,adjective,wet|wet|wet|wet|sweet|phlegmy,human industry
+dull,adjective,lively|bright|sharp|sharp,establishment
+dynamic,adjective,undynamic|stative,human country hobby
+dynamical,adjective,undynamic,human
+dystopian,adjective,utopian,human
+eared,adjective,earless,country
+eastern,adjective,western|western,country
+easy,adjective,difficult|uneasy,human
+eccentric,adjective,concentric,institution
+elegant,adjective,inelegant,human country
+emotional,adjective,cerebral|unemotional,human
+empty,adjective,full,human
+endemic,adjective,epidemic|cosmopolitan,country
+endozoic,adjective,epizoic,animal
+enterprising,adjective,unenterprising,country
+entozoan,adjective,epizoic,animal
+entozoic,adjective,epizoic,animal
+epizoic,adjective,entozoic,animal
+established,adjective,unestablished,country
+estrous,adjective,anestrous,animal country
+ethical,adjective,unethical,human
+eupneic,adjective,breathless,country
+eupnoeic,adjective,breathless,country
+exact,adjective,inexact,hobby
+excited,adjective,unexcited,human country
+exempt,adjective,nonexempt|taxable,human
+expansive,adjective,unexpansive,human
+explicit,adjective,implicit,hobby
+exploited,adjective,unexploited,human
+explorative,adjective,nonexploratory,landscape
+exploratory,adjective,nonexploratory,landscape
+extramural,adjective,intramural,institution
+extrospective,adjective,introspective,industry
+extroverted,adjective,introspective,industry
+eyed,adjective,eyeless,country
+faced,adjective,faceless,country
+factory-made,adjective,homemade,industry
+false,adjective,true,human hobby
+far,adjective,near,animal
+fashionable,adjective,unfashionable|styleless,hobby
+fat,adjective,thin|nonfat,hobby
+feathered,adjective,unfeathered,landscape
+federal,adjective,unitary,country
+female,adjective,androgynous,animal
+ferned,adjective,fernless,landscape
+ferny,adjective,fernless,landscape
+fertile,adjective,sterile,hobby
+feverish,adjective,afebrile,human
+fictional,adjective,nonfictional,country
+figurative,adjective,literal,human animal
+fine,adjective,coarse,industry
+finer,adjective,coarse,industry
+fingered,adjective,fingerless,country
+finished,adjective,unfinished|unfinished,country
+finite,adjective,infinite|infinite,human
+flat,adjective,contrasty|natural,animal
+fledged,adjective,unfledged,animal country
+foreign,adjective,domestic|native,country
+formal,adjective,informal|informal,human
+former,adjective,latter,human
+forward,adjective,backward|backward|reverse,human
+fraternal,adjective,identical|sisterly,institution
+fresh,adjective,stale|preserved|salty,establishment
+friendly,adjective,unfriendly|unfriendly|hostile,country
+frivolous,adjective,serious,human
+fruitful,adjective,unfruitful,hobby
+full-term,adjective,premature,country
+future,adjective,past,country
+gabled,adjective,hipped,landscape
+geocentric,adjective,heliocentric,institution
+glassed,adjective,unglazed,landscape
+glazed,adjective,unglazed|unglazed,landscape
+gloved,adjective,gloveless,landscape
+granular,adjective,achondritic,landscape
+gregarious,adjective,ungregarious|ungregarious,establishment animal
+guided,adjective,unguided,hobby
+gutsy,adjective,gutless,country
+haired,adjective,hairless,landscape
+hairy,adjective,hairless,landscape
+hardened,adjective,untempered|soft,human
+headed,adjective,unheaded|headless,country
+heavy,adjective,light|light|light|light|light|light,human
+heliocentric,adjective,geocentric,institution
+heterodactyl,adjective,zygodactyl,animal
+high,adjective,low|low|low,country
+higher,adjective,low|low|low,country
+highland,adjective,lowland,country landscape
+hipped,adjective,hipless|gabled,country
+hirsute,adjective,hairless,landscape
+holozoic,adjective,holophytic,animal
+home,adjective,away,country
+homocentric,adjective,eccentric,institution
+homocercal,adjective,heterocercal,animal
+hopeless,adjective,hopeful,human
+hostile,adjective,amicable|friendly,establishment country
+hot,adjective,cold|cold,country
+human,adjective,nonhuman,human animal
+humane,adjective,inhumane,human industry
+hypertonic,adjective,hypotonic|hypotonic,country
+ill-defined,adjective,well-defined,country
+immature,adjective,mature|old|ripe|mature|fledged,human animal
+impersonal,adjective,personal,human
+impossible,adjective,possible,human
+impure,adjective,pure|pure|clean,human
+incapable,adjective,capable|capable,country
+incidental,adjective,basic,establishment
+inclement,adjective,clement|clement,human
+inclusive,adjective,exclusive,country
+incontinent,adjective,continent,country
+indecent,adjective,decent,institution
+indecorous,adjective,decorous,institution
+indefinite,adjective,definite,country
+indeterminate,adjective,determinate|determinate,country
+indirect,adjective,direct|lineal|direct,human country
+individual,adjective,common,human
+infinite,adjective,finite|finite,human
+inner,adjective,outer,institution
+innocent,adjective,guilty,country
+innocuous,adjective,noxious,country
+insectivorous,adjective,carnivorous,animal
+insensate,adjective,sentient,human
+insensitive,adjective,sensitive|sensitive,human
+inside,adjective,outside,institution
+insoluble,adjective,soluble|soluble,country
+institutional,adjective,noninstitutional,institution
+institutionalised,adjective,noninstitutionalized,institution
+institutionalized,adjective,noninstitutionalized,institution
+insured,adjective,uninsured,landscape
+intangible,adjective,tangible|tangible,establishment
+integrated,adjective,nonintegrated|segregated,establishment institution
+intellectual,adjective,nonintellectual|emotional,human
+intelligent,adjective,unintelligent,country
+intemperate,adjective,temperate|temperate,human
+intercontinental,adjective,continental,country
+interdepartmental,adjective,intradepartmental,institution
+interested,adjective,uninterested,country
+interior,adjective,exterior,country institution
+intermediate,adjective,terminal,country
+internal,adjective,external,country institution
+international,adjective,national,country
+interstate,adjective,intrastate,country
+intradepartmental,adjective,interdepartmental,institution
+intramural,adjective,extramural,institution
+intrastate,adjective,interstate,country
+introspective,adjective,extrospective,industry
+introverted,adjective,extrospective,industry
+involved,adjective,uninvolved,human institution
+inward,adjective,outward,institution
+irrecoverable,adjective,recoverable,landscape
+irregular,adjective,regular|regular|regular,human industry
+jawed,adjective,jawless,animal
+jawless,adjective,jawed,animal
+jumpy,adjective,smooth,country
+junior,adjective,senior,human institution
+kind,adjective,unkind,human
+landed,adjective,landless,country
+last,adjective,first,country
+late,adjective,early|early|early,human
+later,adjective,early|early|early|early,human
+latest,adjective,early|early|early,human
+latter,adjective,former,human
+lawful,adjective,unlawful,hobby
+leafy,adjective,leafless,landscape
+leavened,adjective,unleavened,hobby
+legitimate,adjective,illegitimate,country hobby
+lengthways,adjective,crosswise,hobby
+lengthwise,adjective,crosswise,hobby
+lentic,adjective,lotic,landscape
+licit,adjective,illicit,hobby
+lidded,adjective,lidless,country landscape
+lidless,adjective,lidded,landscape
+light,adjective,heavy|dark|heavy|heavy|heavy|dark|heavy|heavy,human
+like,adjective,unlike|unlike|unalike,country
+limbed,adjective,limbless,country
+lined,adjective,unlined,country
+liquid,adjective,gaseous|unmelted,country
+liquified,adjective,unmelted,country
+little,adjective,large|big|much|tall,animal
+littler,adjective,large|big|much|tall,animal
+live,adjective,recorded|dead|dead,country
+loaded,adjective,unloaded,country
+local,adjective,national|general,country
+logical,adjective,illogical|incoherent,country
+loose,adjective,compact|tight|affixed,human
+lost,adjective,found|saved|won,human country landscape
+low-class,adjective,middle-class,institution
+lower-class,adjective,middle-class,institution
+lowland,adjective,upland,country
+loyal,adjective,disloyal|unpatriotic,country
+lyric,adjective,dramatic,human
+made,adjective,unmade,industry
+maladjusted,adjective,adjusted,human
+male,adjective,female,animal
+manlike,adjective,unmanly,human
+manual,adjective,automatic,human
+marked,adjective,unmarked,country
+married,adjective,unmarried,country
+mature,adjective,immature|immature|green|unfledged,animal country
+mechanical,adjective,nonmechanical,hobby industry
+medullated,adjective,unmyelinated,landscape
+melted,adjective,unmelted,country
+membered,adjective,memberless,country
+migratory,adjective,nonmigratory,animal
+mindless,adjective,mindful,country
+mobile,adjective,immobile,country industry
+moderate,adjective,immoderate,hobby
+modest,adjective,immodest|immodest,country
+molar,adjective,molecular,human animal
+molecular,adjective,molar,establishment institution
+monecious,adjective,dioecious,animal
+monoecious,adjective,dioecious,animal
+monoicous,adjective,dioecious,animal
+monophonic,adjective,polyphonic,industry
+moral,adjective,immoral,human
+moved,adjective,unmoved,human
+moving,adjective,nonmoving|unmoving|still,human
+multivalent,adjective,univalent|monovalent,institution
+muscular,adjective,ectomorphic,human
+mutual,adjective,nonreciprocal,human
+myelinated,adjective,unmyelinated,landscape
+naif,adjective,sophisticated,country
+naive,adjective,sophisticated,country
+narrow,adjective,wide|broad-minded|wide,country
+nasty,adjective,nice,human
+national,adjective,international|local,human country
+native,adjective,foreign|adopted|nonnative,human country
+natural,adjective,unnatural|artificial|supernatural|sharp,hobby
+necked,adjective,neckless,country
+neurotic,adjective,unneurotic,human
+neutral,adjective,positive|chromatic,human
+new,adjective,old|worn,landscape
+nidicolous,adjective,nidifugous,animal
+nidifugous,adjective,nidicolous,animal
+nominal,adjective,real,human
+non-conducting,adjective,conductive,country
+non-finite,adjective,finite,human
+nonadsorbent,adjective,adsorbent,country
+nonadsorptive,adjective,adsorbent,country
+nonarbitrary,adjective,arbitrary,country
+noncivilised,adjective,civilized,country
+noncivilized,adjective,civilized,country
+noncombinative,adjective,combinative,country
+noncommissioned,adjective,commissioned,human
+nonconcentric,adjective,concentric,institution
+nonconducting,adjective,conductive,country
+nonconductive,adjective,conductive,country
+nonconformist,adjective,conformist,human
+noncritical,adjective,critical|critical|critical,country
+noncrucial,adjective,crucial|critical,country
+nonexempt,adjective,nontaxable|exempt,human
+nonhuman,adjective,human,human
+nonindustrial,adjective,industrial,industry
+noninstitutional,adjective,institutional,institution
+noninstitutionalised,adjective,institutionalized,institution
+noninstitutionalized,adjective,institutionalized,institution
+nonjudgmental,adjective,judgmental,human
+nonmechanical,adjective,mechanical,human
+nonmigratory,adjective,migratory,animal
+nonnative,adjective,native,human animal country
+nonpasserine,adjective,passerine,animal
+nonsectarian,adjective,sectarian,institution
+nonsubjective,adjective,subjective,human
+normal,adjective,abnormal|paranormal|abnormal,hobby
+northern,adjective,southern|southern,country
+objective,adjective,subjective,human
+obstinate,adjective,docile,hobby
+off,adjective,on|on,country industry
+off-line,adjective,on-line|on-line,industry
+official,adjective,unofficial,country institution
+old,adjective,young|new,human
+older,adjective,young|new,human
+omnivorous,adjective,insectivorous,animal
+one-sided,adjective,reversible|multilateral,human
+open,adjective,shut|closed|closed|closed|unreceptive|covert,establishment landscape
+optional,adjective,obligatory,human
+oral,adjective,aboral|anal,animal country
+orientated,adjective,unoriented,country
+orientating,adjective,disorienting,industry
+oriented,adjective,unoriented,country
+orienting,adjective,disorienting,industry
+outer,adjective,inner|safe,institution
+owned,adjective,unowned,country
+packaged,adjective,unpackaged,landscape
+painted,adjective,unpainted|unpainted,hobby
+paranormal,adjective,sensory|normal,hobby
+passerine,adjective,nonpasserine,animal
+passing,adjective,running,country
+passionate,adjective,passionless,human
+past,adjective,present,human
+patriarchal,adjective,matriarchal,establishment institution
+patriotic,adjective,unpatriotic,country
+paved,adjective,unpaved,landscape
+personal,adjective,impersonal,human
+plantigrade,adjective,digitigrade,human animal
+platyrhine,adjective,catarrhine,human
+platyrhinian,adjective,catarrhine,human
+platyrrhine,adjective,catarrhine,human
+platyrrhinian,adjective,catarrhine,human
+platyrrhinic,adjective,catarrhine,human
+pleasant,adjective,unpleasant,human
+plucky,adjective,gutless,country
+polite,adjective,impolite|uncivil,human industry
+poor,adjective,rich|rich|rich,industry
+popular,adjective,unpopular,human
+potted,adjective,unpotted,landscape
+powered,adjective,unpowered,country
+powerful,adjective,powerless,human
+preceding,adjective,succeeding,human
+precocial,adjective,altricial,landscape
+prejudiced,adjective,unprejudiced,human
+private,adjective,public,human
+proactive,adjective,retroactive,human
+processed,adjective,unrefined|unprocessed,country
+profound,adjective,superficial,human
+progressive,adjective,regressive|regressive,hobby
+proper,adjective,improper,human
+provincial,adjective,cosmopolitan,human
+psychoneurotic,adjective,unneurotic,human
+public,adjective,private,human
+punished,adjective,unpunished,human
+pure,adjective,impure|unsaturated|impure,human country
+racial,adjective,nonracial,human
+rational,adjective,irrational|irrational,human
+real,adjective,unreal|unreal|nominal|insubstantial,country
+reciprocal,adjective,nonreciprocal,human
+recorded,adjective,live,industry
+recoverable,adjective,unrecoverable,landscape
+refined,adjective,unrefined|unrefined,human
+registered,adjective,unregistered|unregistered,animal institution
+regressive,adjective,progressive|progressive,country
+regular,adjective,irregular|irregular|irregular|constipated,human hobby
+rehabilitative,adjective,punitive,establishment
+reliable,adjective,unreliable|undependable,institution
+reserved,adjective,unreserved|unreserved,human
+resident,adjective,nonresident|migratory,animal
+resolute,adjective,irresolute,country
+responsible,adjective,irresponsible,institution
+responsive,adjective,unresponsive,human
+restrained,adjective,unrestrained,hobby
+restrictive,adjective,unrestrictive,country
+retarded,adjective,precocious,human
+retentive,adjective,unretentive,country
+reversible,adjective,irreversible|nonreversible,country
+revived,adjective,unrevived,establishment
+rewarding,adjective,unrewarding,human
+rh-negative,adjective,rh-positive,human
+rh-positive,adjective,rh-negative,human
+right,adjective,left|incorrect|wrong|wrong|wrong|left,human industry
+robust,adjective,frail,industry
+roofed,adjective,roofless,country landscape
+rough,adjective,smooth|smooth|smooth|cut,human
+rude,adjective,civil,human country
+rugged,adjective,delicate|unfurrowed,industry
+ruminant,adjective,nonruminant,animal
+running,adjective,standing|passing|standing,hobby
+rural,adjective,urban,country
+sacred,adjective,profane,human
+saddled,adjective,unsaddled,animal
+scented,adjective,scentless,country
+sealed,adjective,unsealed|unsealed,landscape
+seated,adjective,standing,human
+seaward,adjective,inshore|offshore,country
+seductive,adjective,unseductive,country
+self-examining,adjective,extrospective,industry
+selfless,adjective,egoistic,animal
+senior,adjective,junior,institution
+sensational,adjective,unsensational,human
+sensitising,adjective,desensitizing,human
+sensitive,adjective,insensitive|insensitive|insensible,country
+sensitizing,adjective,desensitizing,human
+servile,adjective,unservile,human
+shaded,adjective,unshaded|unshaded,hobby
+shallow,adjective,deep|deep,institution
+sheathed,adjective,unsheathed,country landscape
+shell-less,adjective,shelled,animal
+shelled,adjective,unshelled,animal
+short,adjective,long|long|tall|retentive|long|long,landscape
+shuttered,adjective,unshuttered,country
+shy,adjective,confident,human institution
+similar,adjective,dissimilar|unalike|unlike,country
+simple,adjective,complex|compound,country
+single,adjective,common|double|multiple|married,human country
+singular,adjective,plural|plural,human
+sitting,adjective,standing,human
+sleeved,adjective,sleeveless,country
+slippery,adjective,nonslippery,institution
+slow,adjective,fast|fast|fast,establishment
+small,adjective,large|big,animal
+smaller,adjective,large|big,animal
+smooth,adjective,rough|rough|staccato|rough,landscape
+social,adjective,unsocial,human institution
+soled,adjective,soleless,country
+sour,adjective,sweet,country
+southern,adjective,northern|northern,country
+specific,adjective,general|nonspecific,country
+specified,adjective,unspecified,country
+spiny,adjective,spineless,landscape
+spoken,adjective,written,country
+standing,adjective,running|running|seated,human
+statesmanlike,adjective,unstatesmanlike,country
+statesmanly,adjective,unstatesmanlike,country
+stative,adjective,active,country
+steady,adjective,unsteady,human country
+steep,adjective,gradual,country
+stemmed,adjective,stemless|acaulescent,country
+stiff,adjective,impotent,country
+stirred,adjective,unmoved,human
+stormy,adjective,calm,human
+stratified,adjective,unstratified,institution
+structured,adjective,unstructured,establishment institution
+stupid,adjective,smart|intelligent,country
+stylish,adjective,styleless|unfashionable,hobby
+subhuman,adjective,superhuman,human
+submissive,adjective,domineering,country
+superficial,adjective,profound,human
+superhuman,adjective,subhuman,human
+supernatural,adjective,natural,country
+sure,adjective,uncertain|unsure|uncertain,human institution
+surface-assimilative,adjective,nonadsorbent,country
+susceptible,adjective,unsusceptible,human
+sworn,adjective,unsworn,country
+synergistic,adjective,antagonistic,institution
+tactful,adjective,tactless,human
+tame,adjective,wild|wild,country
+tamed,adjective,wild,country
+tangible,adjective,intangible|intangible|impalpable,establishment
+tapped,adjective,untapped,hobby
+temperate,adjective,intemperate|intemperate,human
+tense,adjective,relaxed|lax|lax,country
+terminal,adjective,intermediate,country
+territorial,adjective,nonterritorial|extraterritorial,country
+tight,adjective,loose|leaky,human country industry
+timbered,adjective,untimbered,landscape
+tipped,adjective,untipped,country
+toed,adjective,toeless,country
+tolerant,adjective,intolerant,country
+toned,adjective,toneless,country
+tongued,adjective,tongueless,country
+toothed,adjective,toothless,country
+topless,adjective,topped,landscape
+touched,adjective,untouched|unmoved,human
+tramontane,adjective,cismontane,country landscape
+transmontane,adjective,cismontane,landscape
+troubled,adjective,untroubled,country
+true-false,adjective,multiple-choice,country
+trustful,adjective,distrustful,institution
+trusting,adjective,distrustful,institution
+trustworthy,adjective,untrustworthy,institution
+trusty,adjective,untrustworthy,institution
+turned,adjective,unturned,country institution
+two-handed,adjective,right-handed,human
+typical,adjective,atypical,human
+ugly,adjective,beautiful,landscape
+unacceptable,adjective,acceptable,human
+unaccompanied,adjective,accompanied|accompanied,country
+unaffected,adjective,affected|moved|affected,human
+unagitated,adjective,agitated|agitated,human
+unaltered,adjective,altered,country
+unanalyzed,adjective,analyzed,country
+unarbitrary,adjective,arbitrary,country
+unarmed,adjective,armed|armed,human animal
+unarmored,adjective,armored|armored,human animal landscape
+unarmoured,adjective,armored|armored,human animal landscape
+unashamed,adjective,ashamed,human
+unassisted,adjective,assisted,human
+unattached,adjective,attached,animal
+unbound,adjective,bound|bound,country landscape
+unbridgeable,adjective,bridgeable,landscape
+unchanged,adjective,changed|altered,country
+unclear,adjective,well-defined|clear,country
+unconformist,adjective,conformist,human
+unconscious,adjective,conscious,country
+uncontaminated,adjective,contaminated,institution
+uncontaminating,adjective,dirty,country
+uncultivated,adjective,cultivated,human
+undemonstrative,adjective,demonstrative,human
+undependable,adjective,reliable|dependable,institution
+underprivileged,adjective,privileged,institution
+understood,adjective,ununderstood,country
+undocumented,adjective,documented,country
+unemotional,adjective,emotional,human
+unethical,adjective,ethical,human
+unfaithful,adjective,faithful|faithful,institution
+unfinished,adjective,finished|finished,country
+unfledged,adjective,fledged,animal
+unfruitful,adjective,fruitful,industry
+ungregarious,adjective,gregarious|gregarious,establishment animal
+unguided,adjective,guided,hobby
+unimproved,adjective,improved,country
+uninsured,adjective,insured,landscape
+uninteresting,adjective,interesting,institution
+uninvolved,adjective,involved,human
+united,adjective,divided,human
+unkeyed,adjective,tonal,hobby
+unkind,adjective,kind,human
+unlighted,adjective,lighted,country
+unlit,adjective,lighted,country
+unmarried,adjective,married,country
+unmoved,adjective,moved,human
+unmoving,adjective,moving|moving,human
+unnatural,adjective,natural|normal|unaffected,hobby
+unnoticeable,adjective,obtrusive|noticeable,hobby
+unobjectionable,adjective,dirty,human
+unorthodox,adjective,orthodox,human
+unpatriotic,adjective,patriotic,country
+unprocessed,adjective,refined|processed,country
+unready,adjective,ready,country
+unrecoverable,adjective,recoverable,landscape
+unrefined,adjective,refined|refined,human
+unregistered,adjective,registered|registered,animal institution
+unreliable,adjective,reliable|dependable,institution
+unrestrained,adjective,restrained,human
+unrewarding,adjective,rewarding,human
+unsectarian,adjective,sectarian,institution
+unsensational,adjective,sensational,human
+unsexed,adjective,uncastrated,country
+unsheathed,adjective,sheathed,landscape
+unshelled,adjective,shelled,animal
+unsociable,adjective,sociable,institution
+unsocial,adjective,social,institution
+unspecified,adjective,specified,country
+unstatesmanlike,adjective,statesmanlike,country
+unstructured,adjective,structured,establishment institution
+unstuck,adjective,stuck,establishment country institution
+unsworn,adjective,sworn,country
+unsystematic,adjective,systematic,establishment institution
+untamed,adjective,tame,country
+untouched,adjective,touched|moved,human
+untrustworthy,adjective,trustworthy,institution
+untrusty,adjective,trustworthy,institution
+unwebbed,adjective,webbed,animal
+upland,adjective,lowland,country landscape
+upper-class,adjective,lower-class,institution
+uptown,adjective,downtown,country
+urban,adjective,rural,country
+used,adjective,misused,human
+usual,adjective,unusual,hobby
+veiled,adjective,unveiled,landscape
+ventral,adjective,dorsal|abaxial,animal
+verbal,adjective,numerical,institution
+vertical,adjective,inclined|unerect,establishment industry
+violent,adjective,nonviolent,human
+virtuous,adjective,wicked,country
+warm-blooded,adjective,cold-blooded,animal
+wary,adjective,unwary,institution
+waxy,adjective,unimpressionable,landscape
+weaned,adjective,unweaned,animal
+webbed,adjective,unwebbed,animal
+well-defined,adjective,ill-defined,country
+western,adjective,eastern|eastern,country
+wet,adjective,dry|dry|dry|dry,landscape industry
+wheeled,adjective,wheelless,country
+white,adjective,black|black,human
+whole,adjective,fractional|half,establishment
+wild,adjective,tame|tame,human country
+wishful,adjective,undesirous,industry
+wooded,adjective,unwooded,landscape
+wrapped,adjective,unwrapped,landscape
+young,adjective,old,human
+younger,adjective,old,human
+zygodactyl,adjective,heterodactyl,animal
+closer,adjective,distant|distant|far,human industry
+closest,adjective,distant|distant|far,human industry
+slower,adjective,fast|fast|fast,establishment
+slowest,adjective,fast|fast|fast,establishment
+cleaner,adjective,dirty|unclean|dirty|dirty,human country
+commoner,adjective,individual|uncommon,human
+cooler,adjective,warm|warm|warm,human
+drier,adjective,wet|wet|wet|wet|sweet|phlegmy,human industry
+dryer,adjective,wet|wet|wet|wet|sweet|phlegmy,human industry
+easterner,adjective,western|western,country
+fresher,adjective,stale|preserved|salty,establishment
+highlander,adjective,lowland,country landscape
+lighter,adjective,heavy|dark|heavy|heavy|heavy|dark|heavy|heavy,human
+offerer,adjective,on|on,country industry
+smoother,adjective,rough|rough|staccato|rough,landscape
+steeper,adjective,gradual,country
+tamer,adjective,wild|wild,country
+westerner,adjective,eastern|eastern,country
+wetter,adjective,dry|dry|dry|dry,landscape industry
+wilder,adjective,tame|tame,human country
+flatter,adjective,contrasty|natural,animal
