@@ -6,7 +6,7 @@ import pandas as pd
 
 
 def generate_matrix(colors, length):
-    base_pattern = np.random.choice(colors, rd.choice(range(2, length**2 // 2)))
+    base_pattern = np.random.choice(colors, rd.choice(range(2, 6)))
     base_pattern = np.tile(base_pattern, length**2 // len(base_pattern))
 
     if len(base_pattern) < length**2:
@@ -76,7 +76,7 @@ if __name__ == "__main__":
     colors = 10
     colormap = 'tab20'
 
-    labels = []
+    labels = {'img_path': [], 'label': []}
 
     for i in range(10000):
 
@@ -90,13 +90,40 @@ if __name__ == "__main__":
         options.append(correct)
         rd.shuffle(options)
 
-        labels.append(options.index(correct))
 
         m[index[0], index[1]] = 0
 
         img = render_image(m, options, colors, image_size=256, cmap_name=colormap)
         img.save(f'logic_images/{i}.png')
+        img.close()
+
+        labels['label'].append(options.index(correct))
+        labels['img_path'].append(f'logic_images/{i}.png')
+    
+    test_labels = {'img_path': [], 'label': []}
+
+    for i in range(1000):
+        m = generate_matrix(colors, length)
+
+        index = np.random.choice(length, 2)
+        m = m + 1
+        correct = m[index[0], index[1]]
+
+        options = rd.sample([i for i in range(1, colors) if i != correct], 3)
+        options.append(correct)
+        rd.shuffle(options)
+
+
+        m[index[0], index[1]] = 0
+
+        img = render_image(m, options, colors, image_size=256, cmap_name=colormap)
+        img.save(f'test_logic_images/{i}.png')
+        img.close()
+
+        test_labels['label'].append(options.index(correct))
+        test_labels['img_path'].append(f'test_logic_images/{i}.png')
+
 
     df = pd.DataFrame(labels)
-    df.to_csv('logic_labels.csv', index=False)
+    df.to_csv('test_logic_labels.csv', index=False)
     print('done')
