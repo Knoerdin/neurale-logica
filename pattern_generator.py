@@ -99,6 +99,9 @@ if __name__ == "__main__":
 
         labels['label'].append(options.index(correct))
         labels['img_path'].append(f'logic_images/{i}.png')
+
+    df = pd.DataFrame(labels)
+    df.to_csv('logic_labels.csv', index=False)
     
     test_labels = {'img_path': [], 'label': []}
 
@@ -124,6 +127,6 @@ if __name__ == "__main__":
         test_labels['img_path'].append(f'test_logic_images/{i}.png')
 
 
-    df = pd.DataFrame(labels)
+    df = pd.DataFrame(test_labels)
     df.to_csv('test_logic_labels.csv', index=False)
     print('done')
