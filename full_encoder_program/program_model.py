@@ -76,7 +76,7 @@ def _train_model(model, optimizer, mask, ds, device, batch_size, PAD_ID):
         losses.append(loss.item())
         if len(losses) % 10 == 0:
             bar.set_description(f'Training, {np.mean(losses[-10:])}')
-    return [np.mean(losses[i:i+10]) for i in range(0, len(losses), 10)]
+    return [np.mean(losses[i:i+1000]) for i in range(0, len(losses), 1000)]
 
 
 def _validate_model(model, mask, ds, device, batch_size, PAD_ID):
