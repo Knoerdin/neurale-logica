@@ -55,32 +55,29 @@ class Model(nn.Module):
 
 
 def _train_model(model, optimizer, mask, ds, device, batch_size, PAD_ID):
-    output_losses = []
-    for i in range(2):
-        losses = []
-        ds.shuffle()
-        bar = tqdm.tqdm(ds.batch(batch_size),
-                    f'Training Epoch: {i+1}',
-                    total=len(ds)//batch_size + (1 if len(ds) % batch_size != 0 else 0),
-                    bar_format='{desc:<20}{percentage:3.0f}%|{bar:25}{r_bar}')
-        for encoder_input, decoder_input, decoder_output, _, _ in bar:
-                
-            encoder_input = torch.tensor(encoder_input).to(device)
-            decoder_input = torch.tensor(decoder_input).to(device)
-            decoder_output = torch.tensor(decoder_output).to(device)
+    losses = []
+    ds.shuffle()
+    bar = tqdm.tqdm(ds.batch(batch_size),
+                f'Training',
+                total=len(ds)//batch_size + (1 if len(ds) % batch_size != 0 else 0),
+                bar_format='{desc:<20}{percentage:3.0f}%|{bar:25}{r_bar}')
+    for encoder_input, decoder_input, decoder_output, _, _ in bar:
+            
+        encoder_input = torch.tensor(encoder_input).to(device)
+        decoder_input = torch.tensor(decoder_input).to(device)
+        decoder_output = torch.tensor(decoder_output).to(device)
 
-            output = model(encoder_input, decoder_input, mask)
-            loss = F.cross_entropy(output.view(-1, output.size(-1)), decoder_output.view(-1), ignore_index=PAD_ID)
+        output = model(encoder_input, decoder_input, mask)
+        loss = F.cross_entropy(output.view(-1, output.size(-1)), decoder_output.view(-1), ignore_index=PAD_ID)
 
-            optimizer.zero_grad()
-            loss.backward()
-            optimizer.step()
+        optimizer.zero_grad()
+        loss.backward()
+        optimizer.step()
 
-            losses.append(loss.item())
-            if len(losses) % 10 == 0:
-                bar.set_description(f'Training Epoch: {i + 1}, {np.mean(losses[-10:])}')
-        output_losses.append([np.mean(losses[i:i+1000]) for i in range(0, len(losses), 1000)])
-    return output_losses
+        losses.append(loss.item())
+        if len(losses) % 10 == 0:
+            bar.set_description(f'Training, {np.mean(losses[-10:])}')
+    return [np.mean(losses[i:i+1000]) for i in range(0, len(losses), 1000)]
 
 
 def _validate_model(model, mask, ds, device, batch_size, PAD_ID):
@@ -140,7 +137,7 @@ def _test_model(model, ds, n, device):
                     pass
     return valid/n, atoms/n, correct/n
 
-def _run_model(train, test, setx2, setx4, layers, device, 
+def _run_model(train, test, setx2, setx3, setx4, layers, device, 
                test_size = 1000, batch_size = 128, learning_rate = 1e-4, num_heads = 8, dropout = 0.1, embedding_dim = 128, ff_dim = 2048):
 
     model = Model(
@@ -155,10 +152,14 @@ def _run_model(train, test, setx2, setx4, layers, device,
     optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)
     mask = nn.Transformer.generate_square_subsequent_mask(train._decoder_size, device=device)
     PAD_ID = torch.tensor(0).to(device)
-    train_loss = _train_model(model, optimizer, mask, train, device, batch_size, PAD_ID)
-    validation_loss = _validate_model(model, mask, test, device, batch_size, PAD_ID)
+    train_loss = []
+    validation_loss = []
 
-    validation_test = _test_model(model, test, test_size, device)
+    for _ in range(2):
+        train_loss += [_train_model(model, optimizer, mask, train, device, batch_size, PAD_ID)]
+        validation_loss += [_validate_model(model, mask, test, device, batch_size, PAD_ID)]
+    
     generalisation_x2 = _test_model(model, setx2, test_size, device)
+    generalisation_x3 = _test_model(model, setx3, test_size, device)
     generalisation_x4 = _test_model(model, setx4, test_size, device)
-    return model, train_loss, validation_loss, validation_test, generalisation_x2, generalisation_x4
+    return model, train_loss, validation_loss, generalisation_x2, generalisation_x3, generalisation_x4

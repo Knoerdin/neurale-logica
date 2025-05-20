@@ -41,28 +41,28 @@ if __name__ == "__main__":
 
         setx3, _ = test.split(test_size / len(test))
 
+        unique = len(set([''.join(str(point)) for point in fullset._database['encoder_input']])) / len(fullset._database['encoder_input'])
         contamination_validation = 0
-        testx2_validation = 0
-        testx3_validation = 0
-        testx4_validation = 0
-
+        contamination_testx2 = 0
+        contamination_testx3 = 0
+        contamination_testx4 = 0
 
         for i in tqdm.tqdm(range(test_size), desc='Calculating contamination', bar_format='{desc:<20}{percentage:3.0f}%|{bar:25}{r_bar}'):
             if test._database['encoder_input'][i] in train._database['encoder_input']: 
                 contamination_validation += 1
             if setx2._database['encoder_input'][i] in train._database['encoder_input']:
-                testx2_validation += 1
+                contamination_testx2 += 1
             if setx3._database['encoder_input'][i] in train._database['encoder_input']:
-                testx3_validation += 1
+                contamination_testx3 += 1
             if setx4._database['encoder_input'][i] in train._database['encoder_input']:
-                testx4_validation += 1
+                contamination_testx4 += 1
         contamination_validation /= test_size
-        testx2_validation /= test_size
-        testx3_validation /= test_size
-        testx4_validation /= test_size
+        contamination_testx2 /= test_size
+        contamination_testx3 /= test_size
+        contamination_testx4 /= test_size
 
-        contaminations.append([run, contamination_validation, testx2_validation, testx3_validation, testx4_validation])
-        df = pd.DataFrame(contaminations, columns=['run', 'contamination', 'testx2', 'testx3', 'testx4'])
+        contaminations.append([run, unique, contamination_validation, contamination_testx2, contamination_testx3, contamination_testx4])
+        df = pd.DataFrame(contaminations, columns=['run', 'unique', 'validation', 'testx2', 'testx3', 'testx4'])
         df.to_csv('returned/contamination.csv', index=False)
 
         for layer in layers:
@@ -70,7 +70,7 @@ if __name__ == "__main__":
             score = None
 
             for attempt in range(attempts):
-                model, train_loss, validation_loss, generalisation_x3, generalisation_x2, generalisation_x4 = _run_model(train, test, setx2, setx4, layer, device,test_size = test_size)
+                model, train_loss, validation_loss, generalisation_x2, generalisation_x3, generalisation_x4 = _run_model(train, test, setx2, setx3, setx4, layer, device,test_size = test_size)
                 all_data.append([run, layer, attempt, train_loss, validation_loss, generalisation_x2, generalisation_x3, generalisation_x4])
                 if best is None or \
                     generalisation_x3[2] > score[2] or \
