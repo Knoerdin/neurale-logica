@@ -55,32 +55,37 @@ class Model(nn.Module):
 
 
 def _train_model(model, optimizer, mask, ds, device, batch_size, PAD_ID):
-    losses = []
-    bar = tqdm.tqdm(ds.batch(batch_size),
-                f'Training',
-                total=len(ds)//batch_size + (1 if len(ds) % batch_size != 0 else 0),
-                bar_format='{desc:<20}{percentage:3.0f}%|{bar:25}{r_bar}')
-    for encoder_input, decoder_input, decoder_output, _, _ in bar:
-            
-        encoder_input = torch.tensor(encoder_input).to(device)
-        decoder_input = torch.tensor(decoder_input).to(device)
-        decoder_output = torch.tensor(decoder_output).to(device)
+    output_losses = []
+    for i in range(2):
+        losses = []
+        ds.shuffle()
+        bar = tqdm.tqdm(ds.batch(batch_size),
+                    f'Training Epoch: {i+1}',
+                    total=len(ds)//batch_size + (1 if len(ds) % batch_size != 0 else 0),
+                    bar_format='{desc:<20}{percentage:3.0f}%|{bar:25}{r_bar}')
+        for encoder_input, decoder_input, decoder_output, _, _ in bar:
+                
+            encoder_input = torch.tensor(encoder_input).to(device)
+            decoder_input = torch.tensor(decoder_input).to(device)
+            decoder_output = torch.tensor(decoder_output).to(device)
 
-        output = model(encoder_input, decoder_input, mask)
-        loss = F.cross_entropy(output.view(-1, output.size(-1)), decoder_output.view(-1), ignore_index=PAD_ID)
+            output = model(encoder_input, decoder_input, mask)
+            loss = F.cross_entropy(output.view(-1, output.size(-1)), decoder_output.view(-1), ignore_index=PAD_ID)
 
-        optimizer.zero_grad()
-        loss.backward()
-        optimizer.step()
+            optimizer.zero_grad()
+            loss.backward()
+            optimizer.step()
 
-        losses.append(loss.item())
-        if len(losses) % 10 == 0:
-            bar.set_description(f'Training, {np.mean(losses[-10:])}')
-    return [np.mean(losses[i:i+1000]) for i in range(0, len(losses), 1000)]
+            losses.append(loss.item())
+            if len(losses) % 10 == 0:
+                bar.set_description(f'Training Epoch: {i + 1}, {np.mean(losses[-10:])}')
+        output_losses.append([np.mean(losses[i:i+1000]) for i in range(0, len(losses), 1000)])
+    return output_losses
 
 
 def _validate_model(model, mask, ds, device, batch_size, PAD_ID):
     with torch.no_grad():
+        ds.shuffle()
         losses = []
         for encoder_input, decoder_input, decoder_output, _, _ in tqdm.tqdm(ds.batch(batch_size),
                                                                             f'Validating',
