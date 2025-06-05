@@ -115,9 +115,9 @@ if __name__ == "__main__":
         m = m + 1
         correct = m[index[0], index[1]]
 
-        options = rd.sample([i for i in range(1, colors) if i != correct], 3)
-        options.append(correct)
-        rd.shuffle(options)
+        # options = rd.sample([i for i in range(1, colors) if i != correct], 3)
+        # options.append(correct)
+        # rd.shuffle(options)
 
 
         m[index[0], index[1]] = 0
@@ -127,7 +127,8 @@ if __name__ == "__main__":
         img.save(f'test_puzzles_only/{i}.png')
         img.close()
 
-        test_labels['label'].append(options.index(correct))
+        # test_labels['label'].append(options.index(correct))
+        test_labels['label'].append(correct - 1)
         test_labels['img_path'].append(f'test_puzzles_only/{i}.png')
 
 
