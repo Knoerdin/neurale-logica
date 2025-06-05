@@ -6,7 +6,7 @@ import pandas as pd
 
 
 def generate_matrix(colors, length):
-    base_pattern = np.random.choice(colors, rd.choice(range(2, 6)))
+    base_pattern = np.random.choice(colors, rd.choice(range(2, 12)))
     base_pattern = np.tile(base_pattern, length**2 // len(base_pattern))
 
     if len(base_pattern) < length**2:
@@ -74,6 +74,9 @@ def render_image(m, colors, options=None, image_size=10, cmap_name='viridis'):
 
 
 if __name__ == "__main__":
+    output_train = 'train_puzzles_hard'
+    output_test = 'test_puzzles_hard'
+
     length = 6
     colors = 6
     colormap = 'tab20'
@@ -96,15 +99,15 @@ if __name__ == "__main__":
         m[index[0], index[1]] = 0
 
         img = render_image(m, colors, image_size=12, cmap_name=colormap)
-        img.save(f'train_puzzles_only/{i}.png')
+        img.save(f'{output_train}/{i}.png')
         img.close()
 
         # labels['label'].append(options.index(correct))
         labels['label'].append(correct - 1)
-        labels['img_path'].append(f'train_puzzles_only/{i}.png')
+        labels['img_path'].append(f'{output_train}/{i}.png')
 
     df = pd.DataFrame(labels)
-    df.to_csv('train_puzzles_only.csv', index=False)
+    df.to_csv(f'{output_train}.csv', index=False)
     
     test_labels = {'img_path': [], 'label': []}
 
@@ -124,14 +127,14 @@ if __name__ == "__main__":
 
         img = render_image(m, colors, image_size=12, cmap_name=colormap)
         # img.save(f'test_logic_images/{i}.png')
-        img.save(f'test_puzzles_only/{i}.png')
+        img.save(f'{output_test}/{i}.png')
         img.close()
 
         # test_labels['label'].append(options.index(correct))
         test_labels['label'].append(correct - 1)
-        test_labels['img_path'].append(f'test_puzzles_only/{i}.png')
+        test_labels['img_path'].append(f'{output_test}/{i}.png')
 
 
     df = pd.DataFrame(test_labels)
-    df.to_csv('test_puzzles_only.csv', index=False)
+    df.to_csv(f'{output_test}.csv', index=False)
     print('done')
