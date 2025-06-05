@@ -56,6 +56,7 @@ class Model(nn.Module):
 
 def _train_model(model, optimizer, mask, ds, device, batch_size, PAD_ID):
     losses = []
+    ds.shuffle()
     bar = tqdm.tqdm(ds.batch(batch_size),
                 f'Training',
                 total=len(ds)//batch_size + (1 if len(ds) % batch_size != 0 else 0),
@@ -81,6 +82,7 @@ def _train_model(model, optimizer, mask, ds, device, batch_size, PAD_ID):
 
 def _validate_model(model, mask, ds, device, batch_size, PAD_ID):
     with torch.no_grad():
+        ds.shuffle()
         losses = []
         for encoder_input, decoder_input, decoder_output, _, _ in tqdm.tqdm(ds.batch(batch_size),
                                                                             f'Validating',
@@ -135,7 +137,7 @@ def _test_model(model, ds, n, device):
                     pass
     return valid/n, atoms/n, correct/n
 
-def _run_model(train, test, setx2, setx4, layers, device, 
+def _run_model(train, test, setx2, setx3, setx4, layers, device, 
                test_size = 1000, batch_size = 128, learning_rate = 1e-4, num_heads = 8, dropout = 0.1, embedding_dim = 128, ff_dim = 2048):
 
     model = Model(
@@ -150,10 +152,14 @@ def _run_model(train, test, setx2, setx4, layers, device,
     optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)
     mask = nn.Transformer.generate_square_subsequent_mask(train._decoder_size, device=device)
     PAD_ID = torch.tensor(0).to(device)
-    train_loss = _train_model(model, optimizer, mask, train, device, batch_size, PAD_ID)
-    validation_loss = _validate_model(model, mask, test, device, batch_size, PAD_ID)
+    train_loss = []
+    validation_loss = []
 
-    validation_test = _test_model(model, test, test_size, device)
+    for _ in range(2):
+        train_loss += [_train_model(model, optimizer, mask, train, device, batch_size, PAD_ID)]
+        validation_loss += [_validate_model(model, mask, test, device, batch_size, PAD_ID)]
+    
     generalisation_x2 = _test_model(model, setx2, test_size, device)
+    generalisation_x3 = _test_model(model, setx3, test_size, device)
     generalisation_x4 = _test_model(model, setx4, test_size, device)
-    return model, train_loss, validation_loss, validation_test, generalisation_x2, generalisation_x4
+    return model, train_loss, validation_loss, generalisation_x2, generalisation_x3, generalisation_x4

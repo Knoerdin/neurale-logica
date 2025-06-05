@@ -125,7 +125,13 @@ class DataLoader:
                 self._decode(self._database['decoder_output'][i][:self._database['decoder_output'][i].index(3)]),
                 self._database['atom_label'][i]
             )
-    
+    def shuffle(self):
+        for i in range(len(self._database['encoder_input'])):
+            j = rd.randint(0, len(self._database['encoder_input']) - 1)
+            self._database['encoder_input'][i], self._database['encoder_input'][j] = self._database['encoder_input'][j], self._database['encoder_input'][i]
+            self._database['decoder_input'][i], self._database['decoder_input'][j] = self._database['decoder_input'][j], self._database['decoder_input'][i]
+            self._database['decoder_output'][i], self._database['decoder_output'][j] = self._database['decoder_output'][j], self._database['decoder_output'][i]
+            self._database['atom_label'][i], self._database['atom_label'][j] = self._database['atom_label'][j], self._database['atom_label'][i]
     def batch(self, batch_size = 32):
         for i in range(0, self._size, batch_size):
             yield (self._database['encoder_input'][i: min(self._size, i + batch_size)],

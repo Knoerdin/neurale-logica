@@ -1,0 +1,2 @@
+run,layers,attempt,train_loss,validation_loss,generalisation_x2,generalisation_x3,generalisation_x4
+0,1,0,"[[3.475423208424743], [3.3328014763308245]]","[3.3971433341503143, 3.296784281730652]","(0.0, 0.0, 0.0)","(0.6, 0.02, 0.0)","(0.01, 0.0, 0.0)"
