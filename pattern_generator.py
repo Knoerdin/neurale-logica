@@ -6,7 +6,7 @@ import pandas as pd
 
 
 def generate_matrix(colors, length):
-    base_pattern = np.random.choice(colors, rd.choice(range(2, 12)))
+    base_pattern = np.random.choice(colors, rd.choice(range(8, 12)))
     base_pattern = np.tile(base_pattern, length**2 // len(base_pattern))
 
     if len(base_pattern) < length**2:
