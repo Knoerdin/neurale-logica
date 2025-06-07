@@ -47,6 +47,8 @@ def render_image(m, colors, options=None, image_size=10, cmap_name='viridis'):
     # Draw puzzle
     for y in range(height):
         for x in range(width):
+            if m[y, x] == 0:
+                continue
             color_idx = m[y, x] - 1
             color = colormap[color_idx]
             # Scale each cell to fit puzzle area
